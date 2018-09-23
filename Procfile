@@ -1,1 +1,1 @@
-web java -Dserver.port=$PORT -Dspring.profiles.active=heroku $JAVA_OPTS -jar target/my-ci-cd-0.1.0.jar
+web java -Dserver.port=$PORT -Dspring.profiles.active=heroku $JAVA_OPTS -jar target/my-ci-cd-0.1.0-exec.jar
