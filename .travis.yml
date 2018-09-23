@@ -31,6 +31,7 @@ after_success:
   - export IMAGE_NAME=patelmayurm/mycicd
   - docker build -t $IMAGE_NAME:$COMMIT .
   - docker tag $IMAGE_NAME:$COMMIT $IMAGE_NAME:$TAG
+  - echo $IMAGE_NAME
   - docker push $IMAGE_NAME
 
 deploy:
